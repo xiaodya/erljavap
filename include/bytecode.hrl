@@ -2,8 +2,7 @@
 -record(code_str,{head=0,command=[],indexes=[],params=[]}).
 %% @doc 存储完整字节码解析之后的信息
 -record(bytecode,{classfile=[],last_modify,md5=[],size=0,magic=0, major_version=0, minor_version=0, constant_num=0, constants=[], accessflag=0, class_name=0,
-    super_class_name, interface_num=0, interfaces=[], field_num=0, fields=[], method_num=0, methods=[], attribute_num=0,
-    attributes=[]}).
+    super_class_name, interface_num=0, interfaces=[], field_num=0, fields=[], method_num=0, methods=[], attribute_num=0, attributes=[]}).
 -record(tag,{num,code,length,bytes,index1,index2}).
 %% @doc U2 U2 U2 U2 len |
 -record(field,{num,access_flags,name_index,descriptor_index,attributes_count,attributes}).
